@@ -1,0 +1,135 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;  
+}
+
+body {
+    max-width: 1200px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Header */
+.main-header {
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.first-box {
+    background-color:darkkhaki;
+    display: flex;
+    flex-direction: row nowrap;
+}
+
+.second-box {
+    background-color:indianred;
+}
+
+/* Content of header */
+.left-content {
+    background-color: coral;
+    flex: 1 1 auto;
+}
+
+.center-content {
+    background-color:coral;
+    flex: 10 1 auto;
+}
+
+.right-content {
+    background-color: coral;
+    flex: 1 1 auto;
+}
+
+.second-content {
+    background-color:lightcyan;
+}
+
+
+/* Article Section */
+.articles {
+    background-color: black;
+    display: flex;  
+}
+
+/* First Article Content */
+.first-article {
+    background-color:chocolate;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.article-content-1 {
+    background-color:dimgrey;
+    flex: 1 1 40%;
+}
+
+.article-content-2 {
+    background-color:aqua;
+    flex: 1 1 100%; 
+}
+
+/* Second Article Content */
+.second-article {
+    background-color:beige;
+    flex: 1 1 auto;
+}
+
+.article-content-3 {
+    background-color: cornflowerblue;  
+}
+
+
+/* Footer */
+.main-footer {
+    background-color:black;
+}
+
+.footer-text {
+    background-color:darkseagreen;
+    display: flex;
+    flex: 1 1 auto;
+}   
+
+
+/* Media Query */
+
+/* Exercise 2: Tablet */
+@media screen and (max-width: 768px) {
+    .articles {
+        background-color: yellow;
+        flex-direction: column;
+    }
+}
+
+/* Exercise 3: Mobile phone */
+@media screen and (max-width: 480px) {
+    .first-box {
+    flex-direction: column;
+    }
+   
+   .articles {
+    background-color: slateblue;
+    flex-direction: column;
+   }
+
+   .first-article {
+    background-color:brown;
+    flex-flow: column nowrap;
+   }
+
+   .secondarticle {
+    background-color:seagreen;
+   }
+
+   .article-content-1 {
+    background-color: coral;
+   }
+
+   .article-content-2 {
+    background-color:burlywood;
+   }
+}
