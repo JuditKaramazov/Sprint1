@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;  
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-page {
+    max-width: 1200px;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-margin {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Exercise 4: Header */
+.main-header {
+    background-image: url(../images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row nowrap;
+}
+
+.logo {
+    flex: 1 1 auto;
+    margin: 0 0 0 1.8rem;
+}
+
+.logo:hover {
+    animation: bounce 1s;
+}
+
+.img-responsive {
+    max-width: 75px;
+    height: auto;
+}
+
+.navigation {
+    flex: 6 1 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation a {
+    color: slategrey;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navigation a:hover {
+    color:#F08080;
+    font-size: 1.3rem;
+}
+
+.social {
+    flex: 1 1 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.social a{
+    color: slategrey;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color:rgb(0, 162, 255);
+    font-size: 1.5rem;
+}
+
+.header-box {
+    height: 100px;
+    align-items: flex-end;
+    display: grid;
+    background-color: hsla(203, 15%, 20%, 0.08);
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    padding-bottom: 0.9rem;
+}
+
+h1 {
+    color: #F49B7A;
+    opacity: 0.8;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    font-weight: 350;
+    height: 50px;
+    animation: fadeIn 1.5s ease-in-out 1s both, moveUp 1s ease-out 1s both;
+}
+
+
+/* Exercise 5: Article Section */
+.article-section {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.articles {
+    background: #D8D7D7;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Articles Content */
+.article-content-1 {
+    background-color:#F5F1F1;
+    color: #777575;
+    flex: 1 1 35%;
+    margin: 0.6rem;
+    padding: 0.6rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.article-content-1 h3 {
+    color:#e4d976;
+    font-size: 1rem;
+    margin-top: -1.5rem;
+    margin-left: 0.3rem;
+}
+
+h2 {
+    background-color:#F08080;
+    color:#F5F1F1;
+    font-size: 1.5rem;
+    margin-top:-0.3rem;
+    padding: 0.5em 0 0 0.2rem;
+}
+
+.columns {
+    column-count: 2;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.article-content-1 a {
+    color:#777575;
+}
+
+.article-content-1 a:hover {
+    background-color: #F08080;
+    color:#F5F1F1;
+    font-size: large;
+}
+
+.article-content-2 {
+    background-color:#D8D7D7;
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.4rem;
+}
+
+.articles2 {
+    background-color:#D8D7D7;
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.articles2 h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    padding: 2.5rem;
+}
+
+.articles2 p {
+    font-size: normal;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+
+/* Footer */
+.main-footer {
+    background-color:#F5F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    border-left: 0.7rem solid #D8D7D7;
+    border-right: 0.7rem solid #D8D7D7;
+    margin-top: 0.5rem;
+}
+
+.footer-text {
+    color: #777575;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* Exercise 6: Animations */
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: transalteY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Media Query */
+
+/* Exercise 2: Tablet */
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 1rem;
+    }
+
+    body {
+        height: 100%
+    }
+
+    .logo {
+        margin: 0 0 0 0;
+    }
+
+    .img-responsive {
+        max-width: 55px;
+        height: auto;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    nav .icon {
+        display: none;
+    }
+
+    .main-header {
+        text-align: center;
+    }
+
+    .article-section {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* Exercise 3: Mobile phone */
+@media screen and (max-width: 480px) {
+    * {
+        font-size: 0.9rem;
+    }
+    
+    .main-header {
+        gap: calc(var(--space) * 2);
+    }
+    
+    .menu {
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .img-responsive {
+        max-width: 40px;
+        height: auto;
+    }
+
+    .navigation {
+        gap: 1.5rem;
+    }
+
+    .navigation a {
+        color:#4e4d4d;
+    }
+
+    .social a {
+        color: #4e4d4d;
+    }
+
+    .header-box {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .article-section {
+        flex-direction: column;
+    }
+
+    .articles {
+        flex-flow: column nowrap;
+    }
+
+    .article-content-1 a:hover {
+        font-size: medium;
+    }
+
+    .article-content-2 {
+        font-size: small;
+    }
+
+    .articles2 h3 {
+        font-size: small;
+    }
+}
