@@ -1,4 +1,4 @@
-# Sprint 1 IT Academy | Web Design 1
+# Sprint 1 IT Academy | Web Design (Introduction)
 
 
 ## Getting started with HTML and CSS
